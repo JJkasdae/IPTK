@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 220ed365428d40a449a7281bb2c207c1, type: 3}
-  m_Name: Transition_1
+  m_Script: {fileID: 11500000, guid: 237fa419ad49038438b9b7bda7c9a856, type: 3}
+  m_Name: Session_1
   m_EditorClassIdentifier: 
-  _lastSession: {fileID: 11400000, guid: f45eac6e1d327504ebe81bc5ccdb5edf, type: 2}
-  _nextSession: {fileID: 0}
-  _effect: 0
+  _name: Session 1
+  _description: This session is a introduction session.
+  _sceneName: IntroductionScene

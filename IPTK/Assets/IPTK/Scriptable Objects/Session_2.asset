@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9beff9af4aa66aa45a6244e8c91baf9a, type: 3}
-  m_Name: Presentation
+  m_Script: {fileID: 11500000, guid: 237fa419ad49038438b9b7bda7c9a856, type: 3}
+  m_Name: Session_2
   m_EditorClassIdentifier: 
-  _name: 
-  _description: 
-  _timeline: []
+  _name: Session 2
+  _description: Part 1 session.
+  _sceneName: Part1Scene

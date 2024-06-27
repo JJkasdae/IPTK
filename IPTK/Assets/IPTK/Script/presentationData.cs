@@ -13,6 +13,11 @@ public class presentationData : ScriptableObject
     private string _description;
 
     [SerializeField]
-    private string[] _timeline;
+    private sessionData[] _sessions;
 
+    [SerializeField]
+    private transitionData[] _transitions;
+    
+    public sessionData[] Sessions => _sessions;
+    public transitionData[] Transitions => _transitions;
 }

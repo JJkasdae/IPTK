@@ -3,25 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-//[CustomEditor(typeof(transitionData))]
+[CustomEditor(typeof(transitionData))]
 public class transitionDataEditor : Editor
 {
-    private SerializedProperty _lastScene;
-    private SerializedProperty _nextScene;
+    private SerializedProperty _lastSession;
+    private SerializedProperty _nextSession;
     private SerializedProperty _effect;
 
     private void OnEnable()
     {
-        _lastScene = serializedObject.FindProperty("_lastScene");
-        _nextScene = serializedObject.FindProperty("_nextScene");
+        _lastSession = serializedObject.FindProperty("_lastSession");
+        _nextSession = serializedObject.FindProperty("_nextSession");
         _effect = serializedObject.FindProperty("_effect");
     }
 
     public override void OnInspectorGUI()
     {
+        serializedObject.Update();
         EditorGUILayout.LabelField("Transition General Stats", EditorStyles.boldLabel);
-        EditorGUILayout.PropertyField(_lastScene, new GUIContent("Last Scene"));
-        EditorGUILayout.PropertyField(_nextScene, new GUIContent("Next Scene"));
+        EditorGUILayout.ObjectField(_lastSession, new GUIContent("Last Session"));
+        EditorGUILayout.ObjectField(_nextSession, new GUIContent("Next Session"));
         EditorGUILayout.PropertyField(_effect, new GUIContent("Effect"));
+
+        serializedObject.ApplyModifiedProperties();
     }
 }

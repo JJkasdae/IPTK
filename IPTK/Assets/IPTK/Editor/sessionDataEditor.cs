@@ -19,6 +19,7 @@ public class sessionDataEditor : Editor
 
     public override void OnInspectorGUI()
     {
+        serializedObject.Update();
         //base.OnInspectorGUI();
         //EditorGUILayout.LabelField(_name.stringValue.ToUpper(), EditorStyles.boldLabel);
         //EditorGUILayout.Space(5);
@@ -27,5 +28,6 @@ public class sessionDataEditor : Editor
         EditorGUILayout.PropertyField(_name, new GUIContent("Name"));
         EditorGUILayout.PropertyField(_description, new GUIContent("Description"));
         EditorGUILayout.PropertyField(_sceneName, new GUIContent("Scene Name"));
+        serializedObject.ApplyModifiedProperties();
     }
 }

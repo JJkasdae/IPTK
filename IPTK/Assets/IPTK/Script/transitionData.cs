@@ -11,6 +11,8 @@ public enum transitionEffectType
 [CreateAssetMenu(fileName = "Transition_", menuName = "ImmersivePresentation/Transition", order = 3)]
 public class transitionData : ScriptableObject
 {
+    private int _transitionID;
+
     [Header("Transition General Stats")]
     [SerializeField]
     private sessionData _lastSession;
@@ -20,6 +22,8 @@ public class transitionData : ScriptableObject
 
     [SerializeField]
     private transitionEffectType _effect;
+
+    private transitionData[] transitionDatas;
 
     //public sessionData lastSession => _lastSession;
     //public sessionData nextSession => _nextSession;

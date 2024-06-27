@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/IPTK/Scenes/IntroductionScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/IPTK/Scenes/Part1Scene.unity
+    guid: 878501255813ee249bc6cfb7cce1d780
+  - enabled: 1
+    path: Assets/IPTK/Scenes/Part2Scene.unity
+    guid: d029127e5d31b73479b80eb0b8c6e496
   m_configObjects: {}
