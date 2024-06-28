@@ -15,3 +15,5 @@ MonoBehaviour:
   _lastSession: {fileID: 11400000, guid: f45eac6e1d327504ebe81bc5ccdb5edf, type: 2}
   _nextSession: {fileID: 11400000, guid: 56f8f55b5e498224187dfe7510a70b9e, type: 2}
   _effect: 0
+  _Effect: 0
+  _importEffectAnimation: 
