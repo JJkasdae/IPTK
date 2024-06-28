@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-//[CustomEditor(typeof(presentationData))]
+[CustomEditor(typeof(presentationData))]
 public class presentationDataEditor : Editor
 {
     private SerializedProperty _name;
@@ -31,8 +31,8 @@ public class presentationDataEditor : Editor
         EditorGUILayout.PropertyField(_description, new GUIContent("Description"));
 
         EditorGUILayout.LabelField("Timeline", EditorStyles.boldLabel);
-        EditorGUILayout.ObjectField(_sessions, new GUIContent("Sessions"));
-        EditorGUILayout.ObjectField(_transitions, new GUIContent("Transitions"));
+        EditorGUILayout.PropertyField(_sessions, new GUIContent("Sessions"));
+        EditorGUILayout.PropertyField(_transitions, new GUIContent("Transitions"));
 
         serializedObject.ApplyModifiedProperties();
     }

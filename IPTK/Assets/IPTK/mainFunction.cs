@@ -11,27 +11,40 @@ public class mainFunction : MonoBehaviour
     [SerializeField]
     private presentationData _presentationData;
 
-    private sessionData _currentSession;
-    private int _currentSessionIndex;
+    private int _currentSessionIndex = 0;
+    private string _currentSceneName;
 
     void Start()
     {
-        _currentSessionIndex = 0;
-        _currentSession = _presentationData.Sessions[0];
-        Debug.Log(_currentSession.sceneName);
-        //SceneManager.LoadScene(_currentSession.sceneName);
+        _currentSceneName = SceneManager.GetActiveScene().name; // Get the name of the current scene.
+
+        for (int i = 0; i < _presentationData.Sessions.Length; i++) // Find the index of the current session through the current scene.
+        {
+            if (_presentationData.Sessions[i].sceneName == _currentSceneName)
+            {
+                _currentSessionIndex = i;
+                break;
+            }
+        }
+
+        Debug.Log(_presentationData.Sessions[_currentSessionIndex].sceneName);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow) && Array.IndexOf(_presentationData.Sessions, _currentSession) < _presentationData.Sessions.Length - 1)
-        {
-            _currentSessionIndex++;
-            _currentSession = _presentationData.Sessions[_currentSessionIndex];
-            Debug.Log(_currentSession.sceneName);
-            SceneManager.LoadScene(_currentSession.sceneName);
-        }
+        switchScene();
+    }
 
+    void switchScene()
+    {
+        if (Input.GetKeyDown(KeyCode.RightArrow) && _currentSessionIndex < _presentationData.Sessions.Length - 1)
+        {
+            SceneManager.LoadScene(_presentationData.Sessions[_currentSessionIndex + 1].sceneName);
+        }
+        else if (Input.GetKeyDown(KeyCode.LeftArrow) && _currentSessionIndex > 0)
+        {
+            SceneManager.LoadScene(_presentationData.Sessions[_currentSessionIndex - 1].sceneName);
+        }
     }
 }
