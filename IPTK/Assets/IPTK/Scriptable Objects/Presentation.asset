@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9beff9af4aa66aa45a6244e8c91baf9a, type: 3}
   m_Name: Presentation
   m_EditorClassIdentifier: 
-  _name: 
-  _description: 
   _sessions:
   - {fileID: 11400000, guid: f45eac6e1d327504ebe81bc5ccdb5edf, type: 2}
   - {fileID: 11400000, guid: 56f8f55b5e498224187dfe7510a70b9e, type: 2}
