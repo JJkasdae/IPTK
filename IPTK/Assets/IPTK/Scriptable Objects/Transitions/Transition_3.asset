@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Transition_3
   m_EditorClassIdentifier: 
   _lastSession: {fileID: 11400000, guid: 2cb8de5c67f095142a99e2959c9ae76a, type: 2}
-  _nextSession: {fileID: 0}
+  _nextSession: {fileID: 11400000, guid: 8349fdd010eb5e8419df0b1268fff786, type: 2}
   _effect: 0
   _Effect: 0
   _importEffectAnimation: 
