@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 [CreateAssetMenu(fileName = "Session_", menuName = "ImmersivePresentation/Session", order = 2)]
-[System.Serializable]
-public class sessionData : ScriptableObject
+public class SessionData : ScriptableObject
 {
     [SerializeField]
     private string _name;

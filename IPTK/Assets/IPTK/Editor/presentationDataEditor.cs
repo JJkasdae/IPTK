@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(presentationData))]
-public class presentationDataEditor : Editor
+[CustomEditor(typeof(PresentationData))]
+public class PresentationDataEditor : Editor
 {
     private SerializedProperty _name;
     private SerializedProperty _description;
     private SerializedProperty _sessions;
     private SerializedProperty _transitions;
-
     private void OnEnable()
     {
         _name = serializedObject.FindProperty("_name");
@@ -33,6 +32,7 @@ public class presentationDataEditor : Editor
         EditorGUILayout.LabelField("Timeline", EditorStyles.boldLabel);
         EditorGUILayout.PropertyField(_sessions, new GUIContent("Sessions"));
         EditorGUILayout.PropertyField(_transitions, new GUIContent("Transitions"));
+
 
         serializedObject.ApplyModifiedProperties();
     }

@@ -10,7 +10,7 @@ public class mainFunction : MonoBehaviour
 
     // Start is called before the first frame update
     [SerializeField]
-    private presentationData _presentationData;
+    private PresentationData _presentationData;
 
     //[SerializeField]
     //private GameObject _loadingScreen; // Here is the transition effect which should be set by the presenter
@@ -44,10 +44,10 @@ public class mainFunction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        switchScene();
+        SwitchScene();
     }
 
-    void switchScene()
+    void SwitchScene()
     {
         if (Input.GetKeyDown(KeyCode.RightArrow) && _currentSessionIndex < _presentationData.Sessions.Length - 1)
         {

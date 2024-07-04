@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using System;
 
-[CustomEditor(typeof(sessionData))]
-public class sessionDataEditor : Editor
+[CustomEditor(typeof(SessionData))]
+public class SessionDataEditor : Editor
 {
     private SerializedProperty _name;
     private SerializedProperty _description;
@@ -28,6 +29,7 @@ public class sessionDataEditor : Editor
         EditorGUILayout.PropertyField(_name, new GUIContent("Name"));
         EditorGUILayout.PropertyField(_description, new GUIContent("Description"));
         EditorGUILayout.PropertyField(_sceneName, new GUIContent("Scene Name"));
+
         serializedObject.ApplyModifiedProperties();
     }
 }

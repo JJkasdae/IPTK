@@ -9,16 +9,16 @@ public enum transitionEffectType
     fade
 }
 [CreateAssetMenu(fileName = "Transition_", menuName = "ImmersivePresentation/Transition", order = 3)]
-public class transitionData : ScriptableObject
+public class TransitionData : ScriptableObject
 {
     private int _transitionID;
 
     [Header("Transition General Stats")]
     [SerializeField]
-    private sessionData _lastSession;
+    private SessionData _lastSession;
 
     [SerializeField]
-    private sessionData _nextSession;
+    private SessionData _nextSession;
 
     [SerializeField]
     private transitionEffectType _effect;
@@ -28,6 +28,12 @@ public class transitionData : ScriptableObject
 
     [SerializeField]
     private string _importEffectAnimation;
+
+    public void initialize(SessionData sessionData)
+    {
+        _lastSession = sessionData;
+        Debug.Log(_lastSession);
+    }
     //public sessionData lastSession => _lastSession;
     //public sessionData nextSession => _nextSession;
     //public transitionEffectType effect => _effect;

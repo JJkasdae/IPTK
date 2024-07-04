@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Presentation", menuName = "ImmersivePresentation/Presentation", order = 1)]
-public class presentationData : ScriptableObject
+public class PresentationData : ScriptableObject
 {
     [SerializeField]
     private string _name = "Presentation Data";
@@ -13,11 +13,11 @@ public class presentationData : ScriptableObject
     private string _description;
 
     [SerializeField]
-    private sessionData[] _sessions;
+    private SessionData[] _sessions;
 
     [SerializeField]
-    private transitionData[] _transitions;
-    
-    public sessionData[] Sessions => _sessions;
-    public transitionData[] Transitions => _transitions;
+    private TransitionData[] _transitions;
+
+    public SessionData[] Sessions => _sessions;
+    public TransitionData[] Transitions => _transitions;
 }

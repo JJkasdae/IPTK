@@ -356,9 +356,11 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.30f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.30f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/IPTK/mainFunction.cs"
-"Assets/IPTK/Script/presentationData.cs"
-"Assets/IPTK/Script/sessionData.cs"
-"Assets/IPTK/Script/transitionData.cs"
+"Assets/IPTK/Script/CreatePresentationElements.cs"
+"Assets/IPTK/Script/PresentationData.cs"
+"Assets/IPTK/Script/SessionData.cs"
+"Assets/IPTK/Script/TimelineData.cs"
+"Assets/IPTK/Script/TransitionData.cs"
 -langversion:9.0
 /deterministic
 /optimize+

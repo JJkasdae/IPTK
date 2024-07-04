@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(transitionData))]
-public class transitionDataEditor : Editor
+[CustomEditor(typeof(TransitionData))]
+public class TransitionDataEditor : Editor
 {
     private SerializedProperty _lastSession;
     private SerializedProperty _nextSession;
