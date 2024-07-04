@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.SceneManagement;
@@ -10,6 +9,11 @@ public class CreatePresentationElements
     [MenuItem("ScriptableObject/Create Session and Transition")]
     public static void CreateAllObjects()
     {
+        Scene newScene = EditorSceneManager.NewScene(NewSceneSetup.DefaultGameObjects, NewSceneMode.Single);
+        newScene.name = "NameScene";
+        EditorSceneManager.SaveScene(newScene, "Assets//IPTK/Scenes/NewScene.unity");
+        AssetDatabase.SaveAssets();
+
         SessionData newSession = ScriptableObject.CreateInstance<SessionData>();
         AssetDatabase.CreateAsset(newSession, AssetDatabase.GenerateUniqueAssetPath("Assets/IPTK/Scriptable Objects/Sessions/Session_.asset"));
         AssetDatabase.SaveAssets();
@@ -20,11 +24,8 @@ public class CreatePresentationElements
         EditorUtility.SetDirty(newTransition);
         AssetDatabase.SaveAssets();
 
-        Scene newScene = EditorSceneManager.NewScene(NewSceneSetup.DefaultGameObjects, NewSceneMode.Single);
-        newScene.name = "NameScene";
-        EditorSceneManager.SaveScene(newScene, "Assets//IPTK/Scenes/NewScene.unity");
-        AssetDatabase.SaveAssets();
-
         AssetDatabase.Refresh();        
     }
 }
+
+#endif

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 220ed365428d40a449a7281bb2c207c1, type: 3}
   m_Name: Transition_1
   m_EditorClassIdentifier: 
-  _lastSession: {fileID: 11400000, guid: 40f0aab842339f745a7b7b18e2440d9c, type: 2}
-  _nextSession: {fileID: 0}
+  _lastSession: {fileID: 11400000, guid: 7a1e42edc2bac4f48879e690d1c3b46c, type: 2}
+  _nextSession: {fileID: 11400000, guid: aafde6489a5fb3d4d8291189fa5a7193, type: 2}
   _effect: 0
   _Effect: 0
   _importEffectAnimation: 

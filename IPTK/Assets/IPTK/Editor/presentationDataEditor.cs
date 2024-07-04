@@ -10,12 +10,14 @@ public class PresentationDataEditor : Editor
     private SerializedProperty _description;
     private SerializedProperty _sessions;
     private SerializedProperty _transitions;
+    private SerializedProperty _timeline;
     private void OnEnable()
     {
         _name = serializedObject.FindProperty("_name");
         _description = serializedObject.FindProperty("_description");
         _sessions = serializedObject.FindProperty("_sessions");
         _transitions = serializedObject.FindProperty("_transitions");
+        _timeline = serializedObject.FindProperty("_timeline");
     }
 
     public override void OnInspectorGUI()
@@ -29,9 +31,10 @@ public class PresentationDataEditor : Editor
         EditorGUILayout.PropertyField(_name, new GUIContent("Name"));
         EditorGUILayout.PropertyField(_description, new GUIContent("Description"));
 
-        EditorGUILayout.LabelField("Timeline", EditorStyles.boldLabel);
-        EditorGUILayout.PropertyField(_sessions, new GUIContent("Sessions"));
-        EditorGUILayout.PropertyField(_transitions, new GUIContent("Transitions"));
+        EditorGUILayout.LabelField("Timelines", EditorStyles.boldLabel);
+        //EditorGUILayout.PropertyField(_sessions, new GUIContent("Sessions"));
+        //EditorGUILayout.PropertyField(_transitions, new GUIContent("Transitions"));
+        EditorGUILayout.PropertyField(_timeline, new GUIContent("Timeline"));
 
 
         serializedObject.ApplyModifiedProperties();

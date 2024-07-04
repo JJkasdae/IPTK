@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 237fa419ad49038438b9b7bda7c9a856, type: 3}
   m_Name: Session_1
   m_EditorClassIdentifier: 
-  _name: 
-  _description: 
-  _sceneName: 
+  _name: Session 1
+  _description: Session 1 contents
+  _sceneName: Scene1

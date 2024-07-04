@@ -12,12 +12,16 @@ public class PresentationData : ScriptableObject
     [TextArea()]
     private string _description;
 
-    [SerializeField]
-    private SessionData[] _sessions;
+    //[SerializeField]
+    //private SessionData[] _sessions;
+
+    //[SerializeField]
+    //private TransitionData[] _transitions;
 
     [SerializeField]
-    private TransitionData[] _transitions;
+    private TimelineData _timeline;
 
-    public SessionData[] Sessions => _sessions;
-    public TransitionData[] Transitions => _transitions;
+    //public SessionData[] Sessions => _sessions;
+    //public TransitionData[] Transitions => _transitions;
+    public TimelineData Timeline => _timeline;
 }

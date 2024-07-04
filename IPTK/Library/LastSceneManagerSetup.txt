@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets//IPTK/Scenes/NewScene.unity
+- path: Assets/IPTK/Scenes/Scene3.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

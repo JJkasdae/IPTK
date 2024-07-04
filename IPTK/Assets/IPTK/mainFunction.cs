@@ -29,16 +29,16 @@ public class mainFunction : MonoBehaviour
 
         _currentSceneName = SceneManager.GetActiveScene().name; // Get the name of the current scene.
 
-        for (int i = 0; i < _presentationData.Sessions.Length; i++) // Find the index of the current session through the current scene.
+        for (int i = 0; i < _presentationData.Timeline.transitionData.Length; i++) // Find the index of the current session through the current scene.
         {
-            if (_presentationData.Sessions[i].sceneName == _currentSceneName)
+            if (_presentationData.Timeline.transitionData[i].lastSession.sceneName == _currentSceneName)
             {
                 _currentSessionIndex = i;
                 break;
             }
         }
 
-        Debug.Log(_presentationData.Sessions[_currentSessionIndex].sceneName);
+        Debug.Log(_presentationData.Timeline.transitionData[_currentSessionIndex].lastSession.sceneName);
     }
 
     // Update is called once per frame
@@ -49,13 +49,13 @@ public class mainFunction : MonoBehaviour
 
     void SwitchScene()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow) && _currentSessionIndex < _presentationData.Sessions.Length - 1)
+        if (Input.GetKeyDown(KeyCode.RightArrow) && _currentSessionIndex < _presentationData.Timeline.transitionData.Length - 1)
         {
-            SceneManager.LoadScene(_presentationData.Sessions[_currentSessionIndex + 1].sceneName);
+            SceneManager.LoadScene(_presentationData.Timeline.transitionData[_currentSessionIndex].nextSession.sceneName);
         }
         else if (Input.GetKeyDown(KeyCode.LeftArrow) && _currentSessionIndex > 0)
         {
-            SceneManager.LoadScene(_presentationData.Sessions[_currentSessionIndex - 1].sceneName);
+            SceneManager.LoadScene(_presentationData.Timeline.transitionData[_currentSessionIndex - 1].lastSession.sceneName);
         }
     }
 

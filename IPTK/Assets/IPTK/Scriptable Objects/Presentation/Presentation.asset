@@ -12,14 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9beff9af4aa66aa45a6244e8c91baf9a, type: 3}
   m_Name: Presentation
   m_EditorClassIdentifier: 
-  _name: Geovisualisation Presentation
-  _description: First geovisualisation presentation with IPTK.
-  _sessions:
-  - {fileID: 11400000, guid: f45eac6e1d327504ebe81bc5ccdb5edf, type: 2}
-  - {fileID: 11400000, guid: 56f8f55b5e498224187dfe7510a70b9e, type: 2}
-  - {fileID: 11400000, guid: a4033f4d229da76499a2c5b6c8070c1a, type: 2}
-  - {fileID: 11400000, guid: 325624cc8f9f15b4cb564e7093308d60, type: 2}
-  _transitions:
-  - {fileID: 11400000, guid: 1f67ead666e1f064388da3c34fa70cc4, type: 2}
-  - {fileID: 11400000, guid: 1041056dbd8c35d4e99eb8311921c14c, type: 2}
-  - {fileID: 11400000, guid: dc398caf6b36cff4695827d42761e593, type: 2}
+  _name: Presentation Data
+  _description: Presentation A balabalbalbalalala....
+  _sessions: []
+  _transitions: []
+  _timeline: {fileID: 11400000, guid: 044a41b4595e772468a12cea2ac3eb20, type: 2}

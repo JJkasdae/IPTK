@@ -29,6 +29,9 @@ public class TransitionData : ScriptableObject
     [SerializeField]
     private string _importEffectAnimation;
 
+    public SessionData lastSession => _lastSession;
+    public SessionData nextSession => _nextSession;
+
     public void initialize(SessionData sessionData)
     {
         _lastSession = sessionData;
