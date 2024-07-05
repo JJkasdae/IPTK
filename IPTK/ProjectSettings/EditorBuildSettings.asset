@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/IPTK/Scenes/Scene1.unity
     guid: 9e1a9812b3c5c6a44a89d9c498140868
+  - enabled: 1
+    path: Assets/IPTK/Scenes/NewScene.unity
+    guid: e6118e20376662447b34db8cc4deb06e
   m_configObjects: {}
