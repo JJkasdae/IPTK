@@ -8,7 +8,6 @@ public enum transitionEffectType
     animation,
     fade
 }
-[CreateAssetMenu(fileName = "Transition_", menuName = "ImmersivePresentation/Transition", order = 3)]
 public class TransitionData : ScriptableObject
 {
     private int _transitionID;

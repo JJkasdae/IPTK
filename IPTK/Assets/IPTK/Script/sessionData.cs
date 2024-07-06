@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-[CreateAssetMenu(fileName = "Session_", menuName = "ImmersivePresentation/Session", order = 2)]
 public class SessionData : ScriptableObject
 {
     [SerializeField]

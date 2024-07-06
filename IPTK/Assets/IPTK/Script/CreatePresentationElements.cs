@@ -19,6 +19,7 @@ public class CreatePresentationElements
     private const string sessionPath = "Assets/Data/Sessions";
     private const string transitionPath = "Assets/Data/Transitions";
     private const string scenePath = "Assets/Data/Scenes";
+    private const string timelinePath = "Assets/Data/Timeline";
 
     [MenuItem("PresentationData/Create a presentation")]
     public static void CreatePresentation()
@@ -59,6 +60,18 @@ public class CreatePresentationElements
         AssetDatabase.SaveAssets();
 
         AssetDatabase.Refresh();        
+    }
+
+    [MenuItem("PresentationData/Create timeline")]
+    public static void CreateTimeline()
+    {
+        // Check the folder is existed or not. Existed -> save the file to the folder. Not existed -> create a folder and save the file.
+        CheckFolderExists(timelinePath);
+
+        TimelineData newTimeline = ScriptableObject.CreateInstance<TimelineData>();
+        AssetDatabase.CreateAsset(newTimeline, AssetDatabase.GenerateUniqueAssetPath(Path.Combine(timelinePath, "Timeline.asset")));
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
     }
 
     // Used to generate file name for new objects

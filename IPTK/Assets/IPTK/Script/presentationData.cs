@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Presentation", menuName = "ImmersivePresentation/Presentation", order = 1)]
 public class PresentationData : ScriptableObject
 {
     [SerializeField]
