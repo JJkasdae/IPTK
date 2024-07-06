@@ -6,7 +6,7 @@ using UnityEngine;
 public class PresentationData : ScriptableObject
 {
     [SerializeField]
-    private string _name = "Presentation Data";
+    private string _name;
 
     [SerializeField]
     [TextArea()]

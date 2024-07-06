@@ -35,7 +35,6 @@ public class TransitionData : ScriptableObject
     public void initialize(SessionData sessionData)
     {
         _lastSession = sessionData;
-        Debug.Log(_lastSession);
     }
     //public sessionData lastSession => _lastSession;
     //public sessionData nextSession => _nextSession;

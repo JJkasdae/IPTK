@@ -17,4 +17,9 @@ public class SessionData : ScriptableObject
     private string _sceneName;
 
     public string sceneName => _sceneName;
+
+    public void initialize(string sceneName)
+    {
+        _sceneName = sceneName;
+    }
 }
