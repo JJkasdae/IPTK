@@ -357,6 +357,7 @@
 -analyzer:"D:/Unity/Unity Hub/Editor/2022.3.30f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/IPTK/mainFunction.cs"
 "Assets/IPTK/Script/CreatePresentationElements.cs"
+"Assets/IPTK/Script/DisplayData.cs"
 "Assets/IPTK/Script/presentationData.cs"
 "Assets/IPTK/Script/sessionData.cs"
 "Assets/IPTK/Script/TimelineData.cs"

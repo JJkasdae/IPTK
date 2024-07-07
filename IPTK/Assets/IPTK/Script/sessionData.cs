@@ -14,7 +14,8 @@ public class SessionData : ScriptableObject
 
     [SerializeField]
     private string _sceneName;
-
+    public string Name => _name;
+    public string Description => _description;
     public string sceneName => _sceneName;
 
     public void initialize(string sceneName)

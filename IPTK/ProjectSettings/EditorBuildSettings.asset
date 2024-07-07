@@ -5,25 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/IPTK/Scenes/IntroductionScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: Assets/IPTK/Scenes/Part1Scene.unity
-    guid: 878501255813ee249bc6cfb7cce1d780
-  - enabled: 0
-    path: Assets/IPTK/Scenes/Part2Scene.unity
-    guid: d029127e5d31b73479b80eb0b8c6e496
   - enabled: 1
-    path: Assets/IPTK/Scenes/Scene3.unity
-    guid: 3a88ac3b05d1af442bf18b86a3ed474e
+    path: Assets/Data/Scenes/Scene1.unity
+    guid: fd6edb298e91ab443abe7ea9f132eab1
   - enabled: 1
-    path: Assets/IPTK/Scenes/Scene2.unity
-    guid: 489c2c6e5a0937d42a9a14543c44d309
+    path: Assets/Data/Scenes/Scene3.unity
+    guid: bca9beb074cd02145bc6e5aee3ba8e69
   - enabled: 1
-    path: Assets/IPTK/Scenes/Scene1.unity
-    guid: 9e1a9812b3c5c6a44a89d9c498140868
-  - enabled: 1
-    path: Assets/IPTK/Scenes/NewScene.unity
-    guid: e6118e20376662447b34db8cc4deb06e
+    path: Assets/Data/Scenes/Scene2.unity
+    guid: 2a4bf588a4eef6a4a8fe022f9da1f95f
   m_configObjects: {}
