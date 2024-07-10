@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9beff9af4aa66aa45a6244e8c91baf9a, type: 3}
   m_Name: Presentation
   m_EditorClassIdentifier: 
-  _name: Presentation
-  _description: Presentation is about balalalala.....
+  _name: First Presentation
+  _description: This is the first immerisve presentation.
   _timeline: {fileID: 11400000, guid: e058a7dcaaad2e745bd84740fdf828a5, type: 2}

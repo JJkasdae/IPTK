@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Session1
   m_EditorClassIdentifier: 
   _name: Session 1
-  _description: Session 1 usually be an introduction section. It will include high-level
-    description about the presentation.
+  _description: Session 1 should include some introduction contents about the presentation.
   _sceneName: Scene1

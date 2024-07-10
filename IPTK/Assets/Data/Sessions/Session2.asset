@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Session2
   m_EditorClassIdentifier: 
   _name: Session 2
-  _description: Session 2 usually demonstrate the first section of the presentation.
+  _description: Session 2 is the second section of the presentation.
   _sceneName: Scene2

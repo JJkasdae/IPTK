@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Session3
   m_EditorClassIdentifier: 
   _name: Session 3
-  _description: Session 3 usually demonstrate the second section of the presentation.
+  _description: Session 3 is the third section of the presentation.
   _sceneName: Scene3
